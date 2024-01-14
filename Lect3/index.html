@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Assignment Marks</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #008CBA;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+</style>
+<body>
+    <div class="container">
+        <h2>Submit Assignment Marks</h2>
+        <form action="submit_marks.php" method="post">
+            <label for="student_id">Student ID:</label>
+            <input type="text" name="student_id" required>
+
+            <label for="assignment_type">Assignment Type:</label>
+            <select name="assignment_type" required>
+                <option value="Quiz">Quiz</option>
+                <option value="Assignment">Assignment</option>
+                <option value="Midterm">Midterm</option>
+                <option value="Final">Final</option>
+            </select>
+
+            <label for="assignment_marks">Assignment Marks:</label>
+            <input type="number" name="assignment_marks" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>

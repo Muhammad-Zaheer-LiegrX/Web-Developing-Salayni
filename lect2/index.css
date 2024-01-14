@@ -1,0 +1,16 @@
+table{
+    border-width: 1px;
+    background-color: rgb(255, 227, 227);
+}
+
+.dat{
+    background-color: orange;
+}
+.dt{
+    background-color: red;
+    color: whitesmoke;
+}
+.sec{
+    background-color: rgb(167, 242, 255);
+    text-align: center;
+}
